@@ -3,7 +3,7 @@ A bare minimum YAML config file loader module for go.
 
 ## How to use
 * `go get github.com/nialfrancis/tinyconfig`
-* Set up your config file. Eg:
+* Set up your `config.yml` file. Eg:
 ```
 ---
 
