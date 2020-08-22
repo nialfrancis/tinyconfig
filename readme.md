@@ -2,7 +2,6 @@
 A bare minimum YAML config file loader module for go.
 
 ## How to use
-* `GET`、`POST`、`PUT`、`DELETE`（Common HTTP methods）
 * `go get github.com/nialfrancis/tinyconfig`
 * Set up your config file. Eg:
 ```
