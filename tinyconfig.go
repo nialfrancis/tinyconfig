@@ -7,12 +7,12 @@ import (
 	"gopkg.in/yaml.v2"
 )
 
-type config struct {
+type TinyConfig struct {
 	VariableOne   string `yaml:"variable_one"`
 	VariableTwo   string `yaml:"variable_two"`
 }
 
-func readFile(path string, cfg *config) {
+func readFile(path string, cfg *TinyConfig) {
 	cffilepath := path + "/config.yml"
 	f, err := os.Open(cffilepath)
 	if err != nil {
@@ -27,8 +27,8 @@ func readFile(path string, cfg *config) {
 	}
 }
 
-func ReadConfig(path string) config {
-	cfg := config{}
+func ReadConfig(path string) TinyConfig {
+	cfg := TinyConfig{}
 	readFile(path, &cfg)
 	return cfg
 }
